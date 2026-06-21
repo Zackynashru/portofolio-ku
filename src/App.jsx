@@ -379,18 +379,32 @@ export default function App() {
             Saya selalu terbuka untuk peluang kolaborasi baru, pengembangan web (Frontend), atau diskusi terkait Database System. Jangan ragu untuk menyapa!
           </p>
 
-          <form action="mailto:zackyjukik@gmail.com" method="GET" className="max-w-md mx-auto mb-12 text-left bg-[#0b1121] p-6 rounded-2xl border border-slate-800 shadow-xl">
+          <form action="https://api.web3forms.com/submit" method="POST" className="max-w-md mx-auto mb-12 text-left bg-[#0b1121] p-6 rounded-2xl border border-slate-800 shadow-xl">
+            
+            {/* PASTE ACCESS KEY DARI EMAIL KAMU DI BAWAH INI */}
+            <input type="hidden" name="access_key" value="e090cdcb-34a5-41b8-a3b6-92e2b4a266c9" />
+            
+            {/* Anti-Spam Bot */}
+            <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
+
+            <div className="mb-4">
+              <label className="block text-slate-400 text-sm font-medium mb-2" htmlFor="email">Email Anda</label>
+              <input type="email" id="email" name="email" className="w-full bg-[#0f172a] border border-slate-700 rounded-lg px-4 py-3 text-slate-200 focus:outline-none focus:border-emerald-500 transition-colors" placeholder="email@perusahaan.com" required />
+            </div>
+
             <div className="mb-4">
               <label className="block text-slate-400 text-sm font-medium mb-2" htmlFor="subject">Subjek</label>
-              <input type="text" id="subject" name="subject" className="w-full bg-[#0f172a] border border-slate-700 rounded-lg px-4 py-3 text-slate-200 focus:outline-none focus:border-emerald-500 transition-colors" placeholder="Peluang Kolaborasi..." required />
+              <input type="text" id="subject" name="subject" className="w-full bg-[#0f172a] border border-slate-700 rounded-lg px-4 py-3 text-slate-200 focus:outline-none focus:border-emerald-500 transition-colors" placeholder="Peluang Kolaborasi / Tawaran Pekerjaan..." required />
             </div>
+
             <div className="mb-6">
-              <label className="block text-slate-400 text-sm font-medium mb-2" htmlFor="body">Pesan</label>
-              <textarea id="body" name="body" rows="4" className="w-full bg-[#0f172a] border border-slate-700 rounded-lg px-4 py-3 text-slate-200 focus:outline-none focus:border-emerald-500 transition-colors" placeholder="Halo Zacky, saya tertarik untuk..." required></textarea>
+              <label className="block text-slate-400 text-sm font-medium mb-2" htmlFor="message">Pesan</label>
+              <textarea id="message" name="message" rows="4" className="w-full bg-[#0f172a] border border-slate-700 rounded-lg px-4 py-3 text-slate-200 focus:outline-none focus:border-emerald-500 transition-colors" placeholder="Halo Zacky, saya tertarik untuk..." required></textarea>
             </div>
+
             <button type="submit" className="w-full bg-emerald-500 text-slate-950 font-bold py-3 rounded-lg hover:bg-emerald-400 transition-colors flex items-center justify-center gap-2">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
-              Kirim Pesan (Email Client)
+              Kirim Pesan
             </button>
           </form>
 
