@@ -19,7 +19,34 @@ export default function App() {
 
     return () => observer.disconnect();
   }, []);
+// State untuk melacak status pengiriman form
+  const [formStatus, setFormStatus] = useState("");
 
+  // Fungsi untuk mengirim form tanpa pindah halaman
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    setFormStatus("Mengirim pesan...");
+    
+    const formData = new FormData(event.target);
+    
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+      
+      const data = await response.json();
+      
+      if (data.success) {
+        setFormStatus(" Pesan berhasil terkirim! Terima kasih.");
+        event.target.reset(); // Mengosongkan isian form setelah sukses
+      } else {
+        setFormStatus(" Gagal mengirim pesan. Silakan coba lagi.");
+      }
+    } catch (error) {
+      setFormStatus(" Terjadi kesalahan jaringan saat mengirim.");
+    }
+  };
   return (
     <div className="bg-[#0b1121] min-h-screen font-sans text-slate-300 selection:bg-emerald-500/30 selection:text-emerald-200 overflow-x-hidden">
       
@@ -378,13 +405,8 @@ export default function App() {
           <p className="text-slate-400 text-base md:text-lg mb-10 max-w-xl mx-auto">
             Saya selalu terbuka untuk peluang kolaborasi baru, pengembangan web (Frontend), atau diskusi terkait Database System. Jangan ragu untuk menyapa!
           </p>
-
-          <form action="https://api.web3forms.com/submit" method="POST" className="max-w-md mx-auto mb-12 text-left bg-[#0b1121] p-6 rounded-2xl border border-slate-800 shadow-xl">
-            
-            {/* PASTE ACCESS KEY DARI EMAIL KAMU DI BAWAH INI */}
+<form onSubmit={handleFormSubmit} className="max-w-md mx-auto mb-12 text-left bg-[#0b1121] p-6 rounded-2xl border border-slate-800 shadow-xl relative">
             <input type="hidden" name="access_key" value="e090cdcb-34a5-41b8-a3b6-92e2b4a266c9" />
-            
-            {/* Anti-Spam Bot */}
             <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
 
             <div className="mb-4">
@@ -394,18 +416,25 @@ export default function App() {
 
             <div className="mb-4">
               <label className="block text-slate-400 text-sm font-medium mb-2" htmlFor="subject">Subjek</label>
-              <input type="text" id="subject" name="subject" className="w-full bg-[#0f172a] border border-slate-700 rounded-lg px-4 py-3 text-slate-200 focus:outline-none focus:border-emerald-500 transition-colors" placeholder="Peluang Kolaborasi / Tawaran Pekerjaan..." required />
+              <input type="text" id="subject" name="subject" className="w-full bg-[#0f172a] border border-slate-700 rounded-lg px-4 py-3 text-slate-200 focus:outline-none focus:border-emerald-500 transition-colors" placeholder="Peluang Kolaborasi..." required />
             </div>
-
+            
             <div className="mb-6">
               <label className="block text-slate-400 text-sm font-medium mb-2" htmlFor="message">Pesan</label>
               <textarea id="message" name="message" rows="4" className="w-full bg-[#0f172a] border border-slate-700 rounded-lg px-4 py-3 text-slate-200 focus:outline-none focus:border-emerald-500 transition-colors" placeholder="Halo Zacky, saya tertarik untuk..." required></textarea>
             </div>
-
+            
             <button type="submit" className="w-full bg-emerald-500 text-slate-950 font-bold py-3 rounded-lg hover:bg-emerald-400 transition-colors flex items-center justify-center gap-2">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
               Kirim Pesan
             </button>
+
+            {/* Pesan Sukses / Error Muncul di Sini */}
+            {formStatus && (
+              <div className="mt-4 p-3 bg-[#0f172a] border border-slate-700 rounded-lg text-center font-medium text-emerald-400 text-sm">
+                {formStatus}
+              </div>
+            )}
           </form>
 
           <div className="flex justify-center gap-4 md:gap-6 flex-wrap">
