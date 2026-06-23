@@ -116,7 +116,7 @@ export default function App() {
             <a href="#proyek" className="bg-emerald-500 text-slate-950 px-8 py-3 rounded-lg font-bold hover:bg-emerald-400 transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)] text-center hover:scale-105 transform">
               &gt; Lihat_Proyek
             </a>
-            <a href="https://linkedin.com/in/zackyannafi-n-b7534928b" target="_blank" rel="noopener noreferrer" className="bg-transparent border border-slate-700 text-slate-300 px-8 py-3 rounded-lg font-medium hover:border-emerald-500 hover:text-emerald-400 transition-all text-center hover:scale-105 transform flex items-center justify-center gap-2">
+            <a href="CV.pdf" target="_blank" rel="noopener noreferrer" className="bg-transparent border border-slate-700 text-slate-300 px-8 py-3 rounded-lg font-medium hover:border-emerald-500 hover:text-emerald-400 transition-all text-center hover:scale-105 transform flex items-center justify-center gap-2">
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
               Download_CV
             </a>
