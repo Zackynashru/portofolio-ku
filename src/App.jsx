@@ -309,7 +309,7 @@ export default function App() {
               <div className="w-full md:w-1/2 relative group">
                 <div className="absolute inset-0 bg-purple-500/20 group-hover:bg-transparent transition-colors duration-300 rounded-xl z-10 pointer-events-none"></div>
                 <img 
-                  src="/Screenshot 2026-06-20 184910.png" 
+                  src="/Screenshot 2026-07-12 200141.jpg" 
                   alt="Screenshot Nexus-AI" 
                   className="rounded-xl h-48 md:h-72 w-full object-cover border border-slate-700 shadow-lg group-hover:scale-[1.02] transition-transform duration-300"
                   onError={(e) => { e.target.src = "https://via.placeholder.com/600x400/0f172a/a855f7?text=Nexus-AI" }}
@@ -320,15 +320,17 @@ export default function App() {
                   <div className="text-purple-400 font-mono text-xs md:text-sm">Featured Project</div>
                   <span className="bg-purple-500/20 text-purple-300 text-[10px] px-2 py-1 rounded-full border border-purple-500/30">AI App</span>
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold text-slate-100 mb-4 hover:text-purple-400 transition-colors cursor-pointer">Chatbot Nexus-AI</h3>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-100 mb-4 hover:text-purple-400 transition-colors cursor-pointer">ResepKu: Smart AI Culinary Assistant</h3>
                 <div className="bg-[#0b1121] p-6 rounded-xl border border-slate-800 text-slate-400 text-sm leading-relaxed mb-4 shadow-xl relative z-20 text-justify md:text-left">
-                  Membangun antarmuka pengguna (UI) chatbot yang responsif dan interaktif menggunakan teknologi frontend web standar untuk pengalaman pengguna yang mulus. Mengintegrasikan layanan Large Language Model (LLM) dari Groq API melalui proxy backend Node.js untuk menangani request AI secara real-time dan mengonfigurasi deployment serverless di Vercel.
+                  Mengembangkan asisten koki virtual cerdas berbasis AI untuk meracik resep dan panduan kuliner. Mengintegrasikan model bahasa Llama-3 (Groq API) melalui backend Node.js/Express.js dengan implementasi Prompt Engineering tingkat lanjut (Domain Guardrails) agar AI beroperasi secara ketat pada konteks dapur. Membangun UI/UX interaktif yang estetik, dilengkapi algoritma kalkulasi porsi dinamis (Regex & DOM) serta manajemen state dengan Local Storage untuk riwayat penyimpanan resep, di-deploy secara serverless menggunakan Vercel.
                 </div>
                 <div className="flex flex-wrap gap-4 font-mono text-xs text-slate-300 justify-center md:justify-start mb-6">
                   <span>HTML/CSS/JS</span>
                   <span>Node.js</span>
                   <span>Express.js</span>
                   <span>Groq API</span>
+                  <span>Prompt Engineering</span>
+                  <span>Local Storage</span>
                   <span>Vercel</span>
                 </div>
                 <div className="flex gap-4 justify-center md:justify-start">
