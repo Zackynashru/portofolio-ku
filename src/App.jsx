@@ -101,7 +101,7 @@ export default function App() {
             Zackyannafi Nashru Romadhoni
           </h1>
           <h2 className="text-xl md:text-2xl font-mono text-emerald-600 mb-4 h-8">
-           <span className="gradient-text">Frontend & Database Developer</span><span className="cursor-blink">_</span>
+           <span className="gradient-text">Web Developer</span><span className="cursor-blink">_</span>
           </h2>
           
           <div className="inline-flex items-center gap-2 bg-[#d1e7dd] text-[#0f5132] px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold mb-6 float">
@@ -109,14 +109,14 @@ export default function App() {
           </div>
           
           <p className="text-slate-600 leading-relaxed mb-8 text-base md:text-lg text-justify md:text-left">
-            Frontend Developer & Database Specialist yang antusias merancang antarmuka pengguna yang interaktif dan arsitektur data yang tangguh. Memiliki keahlian kuat dalam membangun Single Page Applications (SPA) dengan React.js serta merancang sistem basis data relasional (MySQL) yang efisien. Berkomitmen menghadirkan pengalaman digital (UI/UX) yang memukau sekaligus memastikan keandalan performa pengelolaan data berskala besar.
+            Sebagai seorang Web Developer, fokus saya bukan sekadar menulis kode, melainkan menjembatani kebutuhan bisnis menjadi solusi digital yang cerdas dan andal. Melalui perancangan arsitektur backend yang solid dan integrasi teknologi AI/LLM, saya terus berkembang untuk menciptakan sistem yang efisien dan berdampak nyata.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 font-mono text-sm justify-center md:justify-start">
             <a href="#proyek" className="bg-emerald-500 text-white px-8 py-3 rounded-lg font-bold hover:bg-emerald-400 transition-all shadow-[0_0_20px_rgba(16,185,129,0.2)] text-center hover:scale-105 transform">
               &gt; Lihat_Proyek
             </a>
-            <a href="/CV_Zackyannafi Nashru R.pdf" target="_blank" rel="noopener noreferrer" download="CV_Zackyannafi Nashru R.pdf" className="bg-transparent border border-slate-300 text-slate-700 px-8 py-3 rounded-lg font-medium hover:border-emerald-500 hover:text-emerald-600 transition-all text-center hover:scale-105 transform flex items-center justify-center gap-2">
+            <a href="/CV_Zackyannafi N.R.pdf" target="_blank" rel="noopener noreferrer" download="CV_Zackyannafi N.R.pdf" className="bg-transparent border border-slate-300 text-slate-700 px-8 py-3 rounded-lg font-medium hover:border-emerald-500 hover:text-emerald-600 transition-all text-center hover:scale-105 transform flex items-center justify-center gap-2">
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
               Download_CV
             </a>
