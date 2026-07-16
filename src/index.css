@@ -19,14 +19,14 @@
     width: 6px;
   }
   ::-webkit-scrollbar-track {
-    background: #0b1121;
+    background: #f8fafc;
   }
   ::-webkit-scrollbar-thumb {
     background: #10b981;
     border-radius: 3px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #34d399;
+    background: #059669;
   }
 
   /* Font Mono Override */
