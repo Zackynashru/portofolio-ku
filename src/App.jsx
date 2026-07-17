@@ -350,7 +350,7 @@ export default function App() {
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4 hover:text-purple-600 transition-colors cursor-pointer">ResepKu: Smart AI Culinary Assistant</h3>
                 <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 text-slate-600 text-sm leading-relaxed mb-4 shadow-xl relative z-20 text-justify md:text-left">
-Asisten koki virtual AI terintegrasi model Llama-3 (Groq API) dan Node.js. Dilengkapi Prompt Engineering khusus (Domain Guardrails) untuk menjaga akurasi konteks dapur, antarmuka estetik yang menenangkan, fitur kalkulasi porsi dinamis, serta sistem simpan riwayat resep via Local Storage.
+                Asisten koki virtual AI terintegrasi model Llama-3 (Groq API) dan Node.js. Dilengkapi Prompt Engineering khusus (Domain Guardrails) untuk menjaga akurasi konteks dapur, antarmuka estetik yang menenangkan, fitur kalkulasi porsi dinamis, serta sistem simpan riwayat resep via Local Storage.
                 </div>
                 <div className="flex flex-wrap gap-4 font-mono text-xs text-slate-700 justify-center md:justify-start mb-6">
                   <span>HTML/CSS/JS</span>
@@ -395,7 +395,7 @@ Asisten koki virtual AI terintegrasi model Llama-3 (Groq API) dan Node.js. Dilen
               
               <div className="bg-white border border-slate-300 rounded-2xl p-6 md:p-8 shadow-lg hover:border-emerald-500/30 transition-colors">
                 <span className="text-emerald-600 font-mono text-xs md:text-sm font-bold mb-2 block">2024 - Sekarang</span>
-                <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-2">Freelance Web Developer & DB Designer</h3>
+                <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-2">Freelance Web Developer</h3>
                 <p className="text-slate-600 text-sm mb-6">Proyek Mandiri / Lokal</p>
                 
                 <ul className="text-slate-600 text-sm md:text-base space-y-4 list-disc pl-5 marker:text-emerald-500 text-justify md:text-left leading-relaxed">
